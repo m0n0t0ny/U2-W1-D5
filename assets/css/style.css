@@ -151,6 +151,9 @@ nav {
   }
 }
 @media screen and (max-width: 728px) {
+  nav {
+    padding: 0 1rem;
+  }
   .hero-bg {
     display: none;
   }
@@ -203,8 +206,8 @@ main {
   align-items: flex-start;
   width: 30%;
   margin-top: 0.5rem;
-  max-width: 33.333333%;
-  flex-basis: 33.333333%;
+  max-width: 30%;
+  flex-basis: 30%;
 }
 .trending-cell-number {
   font-size: 2rem;
