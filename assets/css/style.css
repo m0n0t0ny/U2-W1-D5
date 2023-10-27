@@ -133,7 +133,7 @@ nav {
   font-weight: 500;
 }
 .hero h3 {
-  width: calc(40%);
+  width: 465px;
   font-size: 24px;
   margin-bottom: 50px;
 }
@@ -269,6 +269,9 @@ main {
     max-width: 90%;
     flex-basis: 90%;
   }
+  .trending h3 {
+    margin: 0 24px;
+  }
 }
 
 /* TODO m-discover-more  */
@@ -298,6 +301,7 @@ main {
   .m-discover-more {
     display: flex;
     flex-direction: column;
+    margin: 0 24px;
   }
 }
 
@@ -412,6 +416,10 @@ aside footer nav a {
 }
 
 @media screen and (max-width: 903px) {
+  .discover-more {
+    display: flex;
+    margin: 0 24px;
+  }
   aside {
     display: none;
   }
