@@ -114,7 +114,8 @@ nav {
 .hero h1 {
   font-size: 106px;
   margin-bottom: 35px;
-  letter-spacing: -7px;
+  letter-spacing: -0.05em;
+  line-height: 95px;
   font-weight: 500;
 }
 .hero h3 {
@@ -126,6 +127,26 @@ nav {
   font-size: 1.25rem;
   width: fit-content;
   padding: 0.6rem 3rem;
+}
+
+@media screen and (max-width: 903px) {
+  .hero h1 {
+    font-size: 85px;
+    line-height: 88px;
+    letter-spacing: -0.055em;
+  }
+}
+@media screen and (max-width: 728px) {
+  .hero-bg {
+    display: none;
+  }
+}
+@media screen and (max-width: 551px) {
+  .hero h1 {
+    font-size: 70px;
+    line-height: 74px;
+    letter-spacing: -0.05em;
+  }
 }
 
 /* ! MAIN */
@@ -168,6 +189,8 @@ main {
   align-items: flex-start;
   width: 30%;
   margin-top: 0.5rem;
+  max-width: 33.333333%;
+  flex-basis: 33.333333%;
 }
 .trending-cell-number {
   font-size: 2rem;
@@ -219,22 +242,48 @@ main {
   content: url(../imgs/svg/star.svg);
 }
 @media screen and (max-width: 1080px) {
-  /* .trending-cell {
-    flex-basis: 33%;
-    flex-grow: 0;
-  } */
+  .trending-cell {
+    max-width: 47%;
+    flex-basis: 47%;
+  }
+}
+@media screen and (max-width: 727px) {
+  main {
+    padding: 0;
+  }
+  .trending-cell {
+    max-width: 90%;
+    flex-basis: 90%;
+  }
 }
 
 /* TODO m-discover-more  */
 
 .m-discover-more {
+  padding-top: 24px;
+  padding-bottom: 24px;
   display: none;
 }
 .m-discover-more h3 {
+  padding-bottom: 16px;
+  font-weight: 500;
 }
 .m-discover-more .categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  row-gap: 18px;
+  margin-bottom: 1rem;
 }
 .m-discover-more h5 {
+  margin-top: 14px;
+  color: #1a8917;
+}
+@media screen and (max-width: 903px) {
+  .m-discover-more {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* * discover-more  */
@@ -308,15 +357,15 @@ aside h3 {
   padding-bottom: 16px;
   font-weight: 500;
 }
-aside .categories {
+.categories {
   border-bottom: 1px solid #f2f2f2;
 }
-aside .categories nav {
+.categories nav {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
-aside .categories a {
+.categories a {
   font-size: 14px;
   line-height: 20px;
   background-color: #f2f2f2;
@@ -345,6 +394,12 @@ aside footer nav a {
 
   margin-right: 26px;
   margin-bottom: 8px;
+}
+
+@media screen and (max-width: 903px) {
+  aside {
+    display: none;
+  }
 }
 
 /* TODO FOOTER */
