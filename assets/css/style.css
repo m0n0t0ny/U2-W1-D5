@@ -1,0 +1,126 @@
+:root {
+  --yellow: #ffc017;
+  --black: #191919;
+  --green: #1a8917;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--black);
+}
+
+h1 {
+  font-family: "Spectral", serif;
+}
+
+.topbar {
+  background-color: var(--yellow);
+}
+header {
+}
+header .logo {
+}
+header img {
+}
+.spacer {
+}
+nav {
+}
+.topbar nav a {
+}
+.hero-box {
+}
+.hero-bg {
+}
+.hero-bg svg {
+}
+.hero {
+}
+.hero h1 {
+}
+.hero h3 {
+}
+.hero button {
+}
+main {
+}
+.trending {
+}
+.trending h3 {
+}
+.top-trending {
+}
+.trending-cell-number {
+}
+.trending-cell-details {
+}
+.author {
+}
+.author img {
+}
+.author a {
+}
+.trending-cell-details h5 {
+}
+.other-cell-details {
+}
+.edit {
+}
+.spacing-symbol {
+}
+.reading-time {
+}
+.m-discover-more {
+}
+.categories {
+}
+.discover-more {
+}
+.more-articles {
+}
+.article-details {
+}
+.article-details h5 {
+}
+.article-details p {
+}
+.article-details .category {
+}
+.article-details img {
+}
+.mobile-app-st {
+}
+.article > img {
+}
+aside {
+}
+aside h3 {
+}
+aside .categories {
+}
+aside .categories a {
+}
+aside h5 {
+}
+aside footer {
+}
+aside footer nav {
+}
+aside footer nav a {
+}
+#m-footer {
+}
+#m-footer img {
+}
+#m-footer nav {
+}
+#m-footer nav a {
+}
+#m-footer strong {
+}
+.mobile-app-stores {
+}
+.mobile-app-stores a {
+}
+.mobile-app-stores a img {
+}
