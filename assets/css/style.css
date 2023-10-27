@@ -401,6 +401,11 @@ aside footer nav a {
   aside {
     display: none;
   }
+  .more-articles {
+  }
+  article {
+    width: 100%;
+  }
 }
 
 /* TODO FOOTER */
