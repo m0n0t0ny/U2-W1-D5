@@ -74,6 +74,8 @@ nav {
   height: 455px;
   margin-top: 75px;
   border-bottom: 1px solid var(--black);
+  max-width: 1192px;
+  padding: 25px 4rem 25px 4rem;
 }
 .hero-bg {
   position: absolute;
@@ -91,8 +93,6 @@ nav {
   justify-content: center;
   width: calc(50% - 4rem);
   height: 100%;
-  max-width: 1192px;
-  padding: 25px 0rem 25px 4rem;
 }
 .hero h1 {
   font-size: 7rem;
