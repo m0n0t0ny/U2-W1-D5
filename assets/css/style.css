@@ -55,6 +55,7 @@ header {
   font-size: 14px;
   background-color: var(--yellow);
   border-bottom: 1px solid var(--black);
+  transition: background-color 0.3s, color 0.3s;
 }
 .inner-header {
   display: flex;
@@ -73,6 +74,11 @@ nav {
   display: flex;
   align-items: center;
 }
+.white-bg {
+  background-color: #fff;
+  color: #191919;
+  transition: background-color 0.3s, color 0.3s;
+}
 .topbar nav a {
   margin-right: 25px;
 }
@@ -80,6 +86,14 @@ nav {
   margin-right: 0;
 }
 .topbar button {
+}
+#get-started {
+  background-color: #191919;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+.green-bg {
+  background-color: #1a8917 !important;
 }
 
 /* * hero-box  */
