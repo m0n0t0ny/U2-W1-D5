@@ -35,23 +35,23 @@ button {
 /* ! TOPBAR */
 
 .topbar {
+  position: relative;
   background-color: var(--yellow);
   width: 100%;
   display: flex;
   justify-content: center;
-  /* overflow: hidden; */
+  overflow: hidden;
   border-bottom: 1px solid var(--black);
   height: 530px;
 }
 
 /* * header  */
 
-/* TODO header menu must shirnk on smaller devices */
-
 header {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,30 +105,22 @@ nav {
 /* * hero-box  */
 
 .hero-box {
+  position: relative;
   display: flex;
-  flex-direction: column;
   width: 100%;
   margin-top: 75px;
   max-width: 1192px;
   padding: 25px 4rem;
-}
-.hero-bg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 75px;
-}
-.hero-bg svg {
+  overflow: hidden;
 }
 
 /* * hero  */
 
 .hero {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 550px;
   height: 100%;
 }
 .hero h1 {
@@ -136,10 +128,11 @@ nav {
   margin-bottom: 35px;
   letter-spacing: -0.05em;
   line-height: 95px;
-  font-weight: 500;
+  font-weight: 400;
+  text-wrap: nowrap;
 }
 .hero h3 {
-  width: 465px;
+  width: 80%;
   font-size: 24px;
   margin-bottom: 50px;
 }
@@ -147,6 +140,19 @@ nav {
   font-size: 1.25rem;
   width: fit-content;
   padding: 0.6rem 3rem;
+}
+
+/* * hero-bg */
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 520px;
+  width: 585px;
+}
+.hero-bg svg {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 903px) {
@@ -171,6 +177,9 @@ nav {
     font-size: 70px;
     line-height: 74px;
     letter-spacing: -0.05em;
+  }
+  nav a:nth-child(4) {
+    display: none;
   }
 }
 
@@ -463,16 +472,33 @@ aside footer nav a {
 
 #m-footer {
   display: none;
+  background-color: #000000;
+  color: #fff;
+  width: 100%;
 }
-#m-footer img {
+.m-inner-footer {
+  padding: 24px 48px;
+  max-width: 1192px;
+}
+#m-footer > img {
+  height: 22px;
+  width: fit-content;
 }
 #m-footer nav {
+  margin: unset;
+  margin-top: 20px;
 }
 #m-footer nav a {
+  color: #fff;
+  font-size: 13px;
+  margin-right: 20px;
 }
 #m-footer strong {
+  display: none;
 }
 .mobile-app-stores {
+  display: none;
+  margin-top: 20px;
 }
 .mobile-app-stores a {
 }
@@ -482,4 +508,51 @@ aside footer nav a {
 /* ! MEDIA QUERY */
 
 @media screen and (max-width: 903px) {
+  #m-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 124px;
+  }
+  .footer-logo {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+  #m-footer nav {
+  }
+  #m-footer nav a {
+  }
+}
+
+@media screen and (max-width: 727px) {
+  #m-footer {
+    height: auto;
+  }
+  .m-inner-footer {
+    padding: 24px;
+  }
+  .footer-logo {
+  }
+  #m-footer nav {
+    border-bottom: 1px solid white;
+  }
+  #m-footer nav a {
+    display: flex;
+    margin-bottom: 28px;
+  }
+  #m-footer strong {
+    display: flex;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .mobile-app-stores {
+    display: flex;
+  }
+  .mobile-app-stores a:nth-child(1) {
+    margin-right: 16px;
+  }
+  .mobile-app-stores img {
+  }
 }
