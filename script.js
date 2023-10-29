@@ -1,3 +1,5 @@
+// header color shifter
+
 document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector("header");
   const getStarted = document.querySelector("#get-started");
@@ -13,49 +15,22 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-/* TODO header M should appear and disappear like in the original website */
+// svg Ms opacity toggler
 
-// svg M spawner/despawner
-
-// function toggleOpacityInfinite() {
-//   document.addEventListener("DOMContentLoaded", function () {
-//     const allM = document.querySelectorAll("g");
-
-//     allM.forEach((M) => {
-//       const appearTime = Math.floor(Math.random() * 5000); // Rounded to the nearest integer
-//       const disappearTime = Math.floor(Math.random() * 5000); // Rounded to the nearest integer
-
-//       M.style.opacity = Math.random() < 0.5 ? 0 : 1;
-
-//       setTimeout(makeItAppear, appearTime);
-//       setTimeout(makeItDisappear, disappearTime);
-
-//       function makeItAppear() {
-//         M.style.opacity = 1;
-//       }
-
-//       function makeItDisappear() {
-//         M.style.opacity = 0;
-//       }
-//     });
-
-//     setTimeout(toggleOpacityInfinite, 5000);
-//   });
-// }
-
-// toggleOpacityInfinite();
-
-const allM = document.querySelectorAll("g");
+const allM = document.querySelectorAll("svg > g > g > g");
 
 function toggleM() {
   allM.forEach((M) => {
-    const randomTime = Math.round(Math.random() * 30000);
+    const randomTime = Math.round(Math.random() * 10000);
     setTimeout(function () {
-      const toggleOpacity = Math.round(Math.random() * 2);
+      const toggleOpacity = Math.round(Math.random());
       M.style.opacity = toggleOpacity;
     }, randomTime);
   });
-
-  setInterval(toggleM, 60000);
 }
-toggleM();
+
+document.addEventListener("DOMContentLoaded", function () {
+  toggleM();
+
+  setInterval(toggleM, 10000);
+});
