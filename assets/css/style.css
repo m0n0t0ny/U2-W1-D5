@@ -395,8 +395,15 @@ article .category {
   line-height: 22px;
   cursor: pointer;
   filter: contrast(100%) !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
 }
-article .other-cell-details a {
+.spark-icon {
+  content: url(../imgs/svg/star.svg);
+}
+article .other-cell-details a:last-child {
   margin-left: auto;
   filter: contrast(25%);
 }
