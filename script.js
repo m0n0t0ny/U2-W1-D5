@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const getStarted = document.querySelector("#get-started");
 
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 300) {
+    if (window.scrollY > 364) {
       header.classList.add("white-bg");
       getStarted.classList.add("green-bg");
     } else {

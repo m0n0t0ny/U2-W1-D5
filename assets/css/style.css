@@ -285,6 +285,8 @@ main {
 }
 .star::after {
   content: url(../imgs/svg/star.svg);
+  margin-top: 3px;
+  margin-left: 3px;
 }
 @media screen and (max-width: 1080px) {
   .trending-cell {
@@ -402,6 +404,7 @@ article .category {
 }
 .spark-icon {
   content: url(../imgs/svg/star.svg);
+  margin-left: 3px;
 }
 article .other-cell-details a:last-child {
   margin-left: auto;
@@ -434,7 +437,7 @@ aside h3 {
   flex-wrap: wrap;
   gap: 8px;
 }
-.categories a {
+.categories nav > a {
   font-size: 14px;
   line-height: 20px;
   background-color: #f2f2f2;
