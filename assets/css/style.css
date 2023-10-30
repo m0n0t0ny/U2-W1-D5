@@ -178,6 +178,20 @@ nav {
   }
 }
 @media screen and (max-width: 551px) {
+  header {
+    margin-top: -1px;
+  }
+  .inner-header {
+    padding: 24px;
+  }
+  .logo {
+    height: 25px;
+  }
+  .topbar button {
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
   .hero-box {
     padding: 24px;
   }
@@ -190,22 +204,11 @@ nav {
   .hero h3 {
     width: 100%;
   }
-  .inner-header {
-    padding: 24px;
-  }
-  .topbar img {
-    height: 25px;
-  }
   nav a:nth-child(4) {
     display: none;
   }
   nav a:nth-child(5) {
     margin: 0;
-  }
-  .topbar button {
-    line-height: 20px;
-    font-size: 14px;
-    text-align: center;
   }
   article {
     display: flex;
